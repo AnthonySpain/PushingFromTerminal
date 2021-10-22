@@ -1,0 +1,671 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+body {
+  margin: 0;
+  font-family: Lato, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.text-center {
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+
+.heading {
+  font-family: Pacifico, sans-serif;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  padding: 0 20px;
+}
+.subheading {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+  padding: 0 20px;
+}
+
+/* ============================ Announcement styles ======================= */
+
+.announcement-bar {
+  background-color: #111;
+}
+.announcement-bar p {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 15px;
+  line-height:1em;
+}
+
+
+/* ============================ Navigation styles ======================= */
+nav a {
+  color: #fff;
+}
+.navigation-container {
+  background-color: #10504F;
+  color: #fff;
+  width:100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.logo-burger__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width:20%;
+  padding: 20px;
+}
+.hb-menu {
+  width: 50px;
+  min-width: 50px;
+  display: block;
+}
+.logo {
+  font-family: Pacifico, sans-serif;
+  font-size: 60px;
+  padding-left: 20px;
+}
+.logo.text-center {
+  padding: 0;
+  margin-bottom: 20px;
+}
+.desktop-nav-list {
+  width:60%;
+}
+.desktop-nav-list ul {
+  list-style: none;
+  display: none;
+  padding: 0;
+  margin: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.desktop-nav-list li {
+  padding: 0 30px;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing:2px;
+}
+.icon-wrapper {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+.icon {
+  margin: 0 10px;
+}
+.icon img{
+  width: 20px;
+}
+.icon.account-icon img {
+  width: 15px;
+}
+.mobile-nav-list{
+  position: fixed;
+  left: 0;
+  top:0;
+  z-index: 9;
+  height: 100%;
+  background-color: #10504F;
+  padding: 20px;
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
+  max-width: 280px;
+  width:80%;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  -o-transition: transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+}
+.mobile-nav-list--active {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+}
+.mobile-nav-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.mobile-nav-list ul li {
+  padding: 20px 0;
+  font-size: 20px;
+}
+.mobile-nav-list ul li:not(:last-child){
+  border-bottom: 1px solid #fff;
+}
+.close-btn {
+  position: absolute;
+  top:20px;
+  right:20px;
+  font-size: 1.2em;
+}
+.opaque-window {
+  background-color: rgba(0,0,0,.3);
+  width:100%;
+  height: 100vh;
+  top: 0;
+  position:fixed;
+  z-index: 8;
+  display: none;
+}
+.opaque-window--active {
+  display: block;
+}
+
+
+/* ============================ Slider Mobile styles ======================= */
+
+.each-slide .slide {
+  height:400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 80% 50%;
+}
+.each-slide {
+  position: relative;
+}
+.slide-btn {
+  background-color: #111;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  font-size: .9em;
+  font-family: Lato, sans-serif;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.banner-slideshow {
+  position: relative;
+}
+.banner-slideshow .tns-nav {
+  position: absolute;
+  top: 350px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 2;
+}
+.tns-nav button {
+  width: 10px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  margin: 10px;
+  background-color: #FFF;
+  opacity: .3;
+}
+.slide-content {
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+}
+.slide-content-1 {
+  color: #10504F;
+}
+.slide-content-2, .slide-content-3 {
+  color: #10504F;
+}
+.tinyslider-wrapper {
+  position: relative;
+}
+.arrow {
+  position: absolute;
+  font-size: 32px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.next {
+  right: 20px;
+}
+.prev {
+  left: 20px;
+}
+button.tns-nav-active {
+  opacity: 1;
+}
+
+/* ============================ Collection Card Mobile Styles ======================= */
+
+.featured-collection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 60px 0;
+}
+.collection-card {
+  width: 33.33%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.collection-card__image {
+  height: 200px;
+  background-size: cover;
+  background-position: center top;
+}
+.collection-card:nth-child(1), .collection-card:nth-child(2) {
+  width: 50%;
+  padding-bottom: 20px;
+}
+.collection-card:nth-child(1) {
+  padding-left: 20px;
+  padding-right: 10px;
+}
+.collection-card:nth-child(2){
+  padding-left: 10px;
+  padding-right: 20px;
+}
+.collection-card:nth-child(3) {
+  width: 100%;
+  padding: 0 20px 0 20px;
+  
+}
+.collection-card__title {
+  background-color: #10504F;
+  color: #fff;
+  text-align: center;
+  font-size: 1em;
+}
+.collection-card__title.heading {
+  margin-bottom: 0;
+  font-size: 1.5em;
+  padding:20px;
+}
+
+/* ============================ Product Card Mobile Styles ======================= */
+
+.product-slideshow__wrapper {
+  margin-bottom: 60px;
+}
+.product-card {
+  text-align: center;
+}
+.product-card a {
+  color: #111;
+}
+.product-card__image img {
+  width: 80%;
+}
+.product-card__title {
+  font-size: 1.4em;
+  margin: 10px 0;
+}
+.product-card__category {
+  text-transform: uppercase;
+}
+.product-card__price {
+  font-family: Pacifico, sans-serif;
+  color: #10504F;
+  font-size: 2em;
+}
+.product-card__price span{
+  font-size: 1.6em;
+}
+
+/* ============================ Static Banner Mobile Styles ======================= */
+
+.static-banner {
+  position: relative;
+}
+.static-banner-bg-image {
+  height: 300px;
+  background-size: cover;
+  background-position: center top;
+}
+.banner-content {
+  position: relative;
+  text-align: center;
+}
+.banner-content .heading, .banner-content .subheading {
+  color: #10504F;
+}
+.banner-content {
+  margin: 40px 0;
+}
+
+/* ============================ Email Sign Up Mobile Styles ======================= */
+
+.email-sign-up {
+  background-color: #10504F;
+  color: #fff;
+  padding: 20px;
+}
+.email-sign-up__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+.email-sign-up__header .heading {
+  font-size: 2em;
+}
+.email-sign-up__header i {
+  font-size: 48px;
+  margin-right: 0;
+}
+.email-copy-input__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.email-input__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width:100%;
+}
+.email-copy {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.email-input {
+  padding: 15px 20px;
+  width:100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.email-submit {
+  background-color: unset;
+  border: 2px solid #fff;
+  padding: 20px 20px;
+  color:  #fff;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+/* ============================ Footer Mobile Styles ======================= */
+
+footer {
+  background-color: #111;
+  color: #fff;
+  padding: 40px;
+}
+footer a {
+  color: #fff;
+}
+footer .heading {
+  font-size: 1.5em;
+  padding: 0;
+}
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+footer ul li {
+  padding: 10px 0;
+}
+.footer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.social-menu i {
+  font-size: 32px;
+}
+.fab.fa-facebook-f {
+  margin-right: 30px;
+}
+.expand-feedback {
+  font-family: sans-serif;
+  font-size: 20px;
+}
+.footer-menu .menu {
+  display: none;
+}
+.footer-menu .menu.menu--active {
+  display: block;
+}
+footer .footer-menu__heading {
+  position: relative;
+  padding-bottom: 5px;
+}
+.footer-menu:not(:last-child) .footer-menu__heading {
+  border-bottom: 1px solid #fff;
+}
+.expand-feedback {
+  position: absolute;
+  right: 0;
+  top:50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+/* ============================ Media Queries ======================= */
+
+@media(min-width: 900px){
+  .heading {
+    font-size: 4em;
+  }
+  .slide-content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+
+  }
+  
+  /* ============================ Navigation Desktop Styles ===============================*/
+
+  .hb-menu {
+    display: none;
+  }
+  .desktop-nav-list ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .icon img{
+    width: 20px;
+  }
+  .logo {
+    padding-left: 40px;
+  }
+
+  /* ============================ BannerSlider Desktop Styles  ======================= */
+
+  .each-slide .slide {
+    height: 700px;
+  }
+  .banner-slideshow .tns-nav {
+    top: 650px;
+  }
+  .slide-content {
+    text-align: left;
+  }
+  .slide-content .heading, .slide-content .subheading {
+    padding: 0;
+    color: #FFF;
+  }
+  .slide-content.slide-content-1 .heading, .slide-content.slide-content-1 .subheading{
+    color: #10504F;
+  }
+  .arrow:hover {
+    cursor: pointer;
+  }
+
+  /* ============================ Collection Card Desktop Styles  ======================= */
+  
+  .collection-card {
+    width: 33.33%!important;
+  }
+  .collection-card__image {
+    height: 500px;
+  }
+  .collection-card:nth-child(1), .collection-card:nth-child(2) {
+ padding-bottom: 20px;
+  }
+  .collection-card__title.heading {
+    font-size: 2.5em;
+  }
+
+  /* ============================ Static Banner Desktop Styles  ======================= */
+
+  .static-banner-bg-image {
+    height: 700px;
+  }
+  .banner-content {
+    position: absolute;
+    top: 6%;
+    right: 6%;
+    text-align: left;
+  }
+  .banner-content .heading, .banner-content .subheading {
+    color: #fff;
+    padding:0;
+  }
+  .banner-content .subheading {
+    padding: 0;
+  }
+  .banner-content .heading {
+    margin-top: 0;
+  }
+  .banner-btn {
+    background-color: #10504F;
+  }
+
+  /* ============================ Email Sign Up Desktop Styles  ======================= */
+  .email-sign-up {
+    padding: 60px 20px;
+  }
+  .email-copy-input__wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .email-copy {
+    width: 50%;
+    text-align: left;
+  }
+  .email-input__wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 50%;
+    padding-left: 20px;
+  }
+  .email-sign-up__header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: left;
+  }
+  .email-sign-up__header i {
+    margin-right: 20px;
+  }
+  .email-submit {
+    margin: 0 0 0 10px;
+  }
+  /* ============================ Footer Desktop Styles ======================= */
+
+  .footer-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .footer-menu {
+    margin: 0;
+    padding: 0 100px 0 0;
+  }
+  .footer-menu .menu {
+    display: block;
+  }
+  .social-menu {
+    margin-left: auto;
+  }
+  .expand-feedback {
+    display: none;
+  }
+  .footer-menu:not(:last-child) .footer-menu__heading {
+    border-bottom: none;
+}
+}
